@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="F6O-YQ-hkr">
+                                <rect key="frame" x="158" y="183" width="285" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="317" id="9hI-Fy-lvj"/>
+                                    <constraint firstAttribute="width" constant="285" id="Bm1-Ed-ZqT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHb-sx-C4B">
+                                <rect key="frame" x="208" y="352" width="90" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="1eh-xq-Yk9"/>
+                                    <constraint firstAttribute="height" constant="35" id="HLJ-bQ-d7U"/>
+                                </constraints>
+                                <state key="normal" image="LoginBtn.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-fh-rHd">
+                                <rect key="frame" x="303" y="352" width="90" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5cQ-uJ-Qof"/>
+                                    <constraint firstAttribute="width" constant="90" id="fSo-kj-m4b"/>
+                                </constraints>
+                                <state key="normal" image="RegisterBtn.png"/>
+                                <connections>
+                                    <segue destination="daX-Ca-mMt" kind="show" id="RSi-aU-DqI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqJ-ck-09I">
+                                <rect key="frame" x="209" y="390" width="184" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="5a6-Lo-Rh7"/>
+                                    <constraint firstAttribute="width" constant="184" id="Pnz-aJ-Ebw"/>
+                                </constraints>
+                                <state key="normal" image="GameCenterBtn.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssi-WH-ED0">
+                                <rect key="frame" x="208" y="428" width="184" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="DNW-cR-7WF"/>
+                                    <constraint firstAttribute="height" constant="37" id="QuK-my-Wgz"/>
+                                </constraints>
+                                <state key="normal" image="FacebookBtn.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwd-je-qQl">
+                                <rect key="frame" x="278" y="329" width="60" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="f0U-am-Rs8"/>
+                                    <constraint firstAttribute="width" constant="60" id="w3r-po-Qxd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <state key="normal" title="忘記密碼？"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ssi-WH-ED0" secondAttribute="bottom" constant="135" id="0C6-3f-RJE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sqJ-ck-09I" secondAttribute="bottom" constant="173" id="0uh-2q-GXk"/>
+                            <constraint firstItem="F6O-YQ-hkr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="630-bI-7YM"/>
+                            <constraint firstItem="sqJ-ck-09I" firstAttribute="centerX" secondItem="F6O-YQ-hkr" secondAttribute="centerX" id="7Vc-8Z-FzO"/>
+                            <constraint firstItem="F6O-YQ-hkr" firstAttribute="leading" secondItem="Zwd-je-qQl" secondAttribute="trailing" constant="-180" id="7gR-7L-sSA"/>
+                            <constraint firstItem="F6O-YQ-hkr" firstAttribute="leading" secondItem="LHb-sx-C4B" secondAttribute="trailing" constant="-140" id="DQc-BV-aB3"/>
+                            <constraint firstItem="LHb-sx-C4B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="2" constant="170" id="Fzh-Em-7Zr"/>
+                            <constraint firstItem="F6O-YQ-hkr" firstAttribute="top" secondItem="Zwd-je-qQl" secondAttribute="bottom" constant="-166" id="Ijf-oF-Uk3"/>
+                            <constraint firstItem="Ssi-WH-ED0" firstAttribute="centerX" secondItem="F6O-YQ-hkr" secondAttribute="centerX" id="WLV-zZ-9HL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LHb-sx-C4B" secondAttribute="bottom" constant="213" id="WeP-Le-GNz"/>
+                            <constraint firstItem="OeI-fh-rHd" firstAttribute="leading" secondItem="F6O-YQ-hkr" secondAttribute="trailing" constant="-140" id="jda-rX-KBq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OeI-fh-rHd" secondAttribute="bottom" constant="213" id="jyr-te-O9a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F6O-YQ-hkr" secondAttribute="bottom" constant="100" id="wfL-rh-qsc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fzh-Em-7Zr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eg9-Ef-Dhg">
+            <objects>
+                <viewController id="daX-Ca-mMt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oAG-6E-bwr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lf9-Kt-xcK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gPS-QZ-FmN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame.png" highlightedImage="frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="lFT-W2-Fdr">
+                                <rect key="frame" x="170" y="145" width="260" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="aOy-ve-NI9"/>
+                                    <constraint firstAttribute="height" constant="420" id="bba-gG-5s1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGE-QI-N06">
+                                <rect key="frame" x="213" y="490" width="86" height="37"/>
+                                <state key="normal" image="CancelBtn.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="MPo-hN-T1B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGY-tx-2sm">
+                                <rect key="frame" x="301" y="490" width="86" height="37"/>
+                                <state key="normal" image="registerBtn.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NGE-QI-N06" firstAttribute="top" secondItem="lFT-W2-Fdr" secondAttribute="bottom" constant="-75" id="IOM-RL-Vkh"/>
+                            <constraint firstItem="lFT-W2-Fdr" firstAttribute="centerX" secondItem="gPS-QZ-FmN" secondAttribute="centerX" id="ON1-3b-DH2"/>
+                            <constraint firstItem="Lf9-Kt-xcK" firstAttribute="top" secondItem="lFT-W2-Fdr" secondAttribute="bottom" constant="35" id="ZFk-gE-x2K"/>
+                            <constraint firstItem="CGY-tx-2sm" firstAttribute="top" secondItem="lFT-W2-Fdr" secondAttribute="bottom" constant="-75" id="cNh-0z-ln9"/>
+                            <constraint firstItem="lFT-W2-Fdr" firstAttribute="leading" secondItem="NGE-QI-N06" secondAttribute="trailing" constant="-129" id="cTY-j6-VJ7"/>
+                            <constraint firstItem="CGY-tx-2sm" firstAttribute="leading" secondItem="lFT-W2-Fdr" secondAttribute="trailing" constant="-129" id="ngC-Bb-KYr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Og7-MR-k0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="385"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CancelBtn.png" width="86" height="37"/>
+        <image name="FacebookBtn.png" width="184" height="37"/>
+        <image name="Frame.png" width="260" height="416"/>
+        <image name="GameCenterBtn.png" width="184" height="37"/>
+        <image name="LoginBtn.png" width="86" height="37"/>
+        <image name="RegisterBtn.png" width="86" height="37"/>
+        <image name="frame.png" width="274" height="303"/>
+        <image name="registerBtn.png" width="86" height="37"/>
+    </resources>
+</document>
